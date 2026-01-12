@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kafka_conn"
+version = "0.1.0"
+description = "Kafka Connection Project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "colorlog>=6.10.1",
+    "confluent-kafka>=2.12.1",
+    "psycopg2-binary>=2.9.11",
+    "pymongo>=4.15.3",
+    "pyspark==3.5.3",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.setuptools]
+packages = ["config", "consumer", "producer", "utils"]
